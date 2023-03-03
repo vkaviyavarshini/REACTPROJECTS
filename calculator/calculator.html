@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Calculator with Dial Pad</title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+  </head>
+  <body>
+    <h1>Simple Calculator with Dial Pad</h1>
+    <div class="calculator">
+    <input type="text" id="screen" readonly>
+    <br><br>
+    <table>
+      <tr>
+        <td><button onclick="buttonClick('7')">7</button></td>
+        <td><button onclick="buttonClick('8')">8</button></td>
+        <td><button onclick="buttonClick('9')">9</button></td>
+        <td><button onclick="buttonClick('/')">/</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="buttonClick('4')">4</button></td>
+        <td><button onclick="buttonClick('5')">5</button></td>
+        <td><button onclick="buttonClick('6')">6</button></td>
+        <td><button onclick="buttonClick('')"></button></td>
+      </tr>
+      <tr>
+        <td><button onclick="buttonClick('1')">1</button></td>
+        <td><button onclick="buttonClick('2')">2</button></td>
+        <td><button onclick="buttonClick('3')">3</button></td>
+        <td><button onclick="buttonClick('-')">-</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="buttonClick('0')">0</button></td>
+        <td><button onclick="buttonClick('.')">.</button></td>
+        <td><button onclick="buttonClick('=')">=</button></td>
+        <td><button onclick="buttonClick('+')">+</button></td>
+      </tr>
+      <tr>
+        <td colspan="4"><button onclick="clearDisplay()">Clear</button></td>
+      </tr>
+    </table>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
